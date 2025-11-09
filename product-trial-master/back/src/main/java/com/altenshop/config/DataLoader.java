@@ -36,8 +36,8 @@ public class DataLoader {
             }
             // Optionally ensure a dev admin user exists when env vars are provided.
             try {
-                String devAdminEmail = System.getenv("ALTENSHOP_DEV_ADMIN_EMAIL");
-                String devAdminPassword = System.getenv("ALTENSHOP_DEV_ADMIN_PASSWORD");
+                String devAdminEmail = "admin@admin.com"; //System.getenv("ALTENSHOP_DEV_ADMIN_EMAIL");
+                String devAdminPassword = "adminpass"; //System.getenv("ALTENSHOP_DEV_ADMIN_PASSWORD");
                 if (devAdminEmail != null && !devAdminEmail.isBlank() && devAdminPassword != null && !devAdminPassword.isBlank()) {
                     if (userService.findByEmail(devAdminEmail).isEmpty()) {
                         User admin = new User();
