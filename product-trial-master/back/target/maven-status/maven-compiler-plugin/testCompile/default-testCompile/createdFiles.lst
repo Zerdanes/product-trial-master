@@ -1,0 +1,4 @@
+com\altenshop\controller\ProductControllerTest.class
+com\altenshop\controller\CartControllerTest.class
+com\altenshop\controller\AuthControllerTest.class
+com\altenshop\controller\WishlistControllerTest.class
